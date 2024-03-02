@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { completeTodo, deleteTodo } from "../redux/actions/actions";
+import { completeTodo, deleteTodo } from "../../redux/actions/actions";
 import { connect } from "react-redux";
 
 const StyledDivContainer = styled.div`

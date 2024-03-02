@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import WeatherData from "./WeatherData";
+import WeatherData from "../Weather/WeatherData";
 
 const UserDetailsWrapper = styled.div`
   display: flex;

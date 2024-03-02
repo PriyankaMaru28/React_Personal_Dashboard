@@ -1,5 +1,5 @@
-import UserProfile from "./components/UserProfile";
-import TodoList from "./components/TodoList";
+import UserProfile from "./components/User/UserProfile";
+import TodoList from "./components/Todo/TodoList";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -8,6 +8,10 @@ const Container = styled.div`
   align-items: center;
   padding: 1rem 5rem 0 5rem;
   margin: 0 auto;
+  background-image: url(${"/backgroundImg.jpeg"});
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 `;
 
 function App() {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
-import { addNewTodo } from "../redux/actions/actions";
+import { addNewTodo } from "../../redux/actions/actions";
 
 const StyledForm = styled.form`
   display: flex;

@@ -9,7 +9,6 @@ const TodoWrapper = styled.div`
   box-shadow: 2px 8px 5px #003262;
   margin-top: 1rem;
   font-family: Roboto;
-  overflow-y: auto;
 `;
 
 const TodoContainer = styled.div`
