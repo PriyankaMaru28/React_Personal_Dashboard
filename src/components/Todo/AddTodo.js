@@ -46,8 +46,8 @@ function AddTodo(props) {
     e.preventDefault();
     if (props.todo) {
       const newTodo = {
-        Name: task,
-        id: props.todo.length + 1,
+        id: props.nextId,
+        name: task,
         isComplete: false,
       };
 
@@ -80,6 +80,7 @@ function AddTodo(props) {
 const mapStateToProps = (state) => {
   return {
     todo: state.todos,
+    nextId: state.nextId,
   };
 };
 

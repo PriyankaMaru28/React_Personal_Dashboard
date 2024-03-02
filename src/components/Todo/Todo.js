@@ -20,7 +20,7 @@ const StyledDivContainer = styled.div`
 const StyledDiv = styled.div`
   margin-top: auto;
   margin-bottom: 1rem;
-  color: ${({ $status }) => ($status ? "#138808" : "#5d8aa8")};
+  color: ${({ $status }) => ($status ? "#138808" : "#4B3621")};
 `;
 
 const Styledbutton = styled.button`
@@ -58,7 +58,7 @@ function Todo({ item, deletetodo, completetodo }) {
 
   return (
     <StyledDivContainer key={item.id}>
-      <Styledh3>{item.Name}</Styledh3>
+      <Styledh3>{item.name}</Styledh3>
       <StyledDiv $status={item.isComplete ? true : false}>
         Status : {item.isComplete ? "Complete" : "Pending"}
       </StyledDiv>

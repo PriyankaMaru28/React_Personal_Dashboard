@@ -1,43 +1,44 @@
 const initialState = {
+  nextId: 9,
   todos: [
     {
       id: 1,
-      Name: "Clean closet",
+      name: "Clean closet",
       isComplete: false,
     },
     {
       id: 2,
-      Name: "Do Laundry",
+      name: "Do Laundry",
       isComplete: false,
     },
     {
       id: 3,
-      Name: "Play Chesss",
+      name: "Play Chesss",
       isComplete: false,
     },
     {
       id: 4,
-      Name: "Write a Song",
+      name: "Write a Song",
       isComplete: false,
     },
     {
       id: 5,
-      Name: "Complete Assignment",
+      name: "Complete Assignment",
       isComplete: false,
     },
     {
       id: 6,
-      Name: "Cook food",
+      name: "Cook food",
       isComplete: false,
     },
     {
       id: 7,
-      Name: "Iron Clothes",
+      name: "Iron Clothes",
       isComplete: false,
     },
     {
       id: 8,
-      Name: "Study React",
+      name: "Study React",
       isComplete: false,
     },
   ],
@@ -47,10 +48,10 @@ const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_TODO":
       const newList = [...state.todos, action.payload];
-      console.log("action,... ", newList);
       return {
         ...state,
         todos: newList,
+        nextId: Number(action.payload.id) + 1,
       };
     case "DELETE_TODO":
       return {

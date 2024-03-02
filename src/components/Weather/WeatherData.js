@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Weather from "./Weather";
+import Weather from "../Weather/Weather";
 
 const city = "Toronto";
 
@@ -13,7 +13,7 @@ function WeatherData() {
     visibility: 7,
   });
 
-  const FetchData = async () => {
+  const fetchData = async () => {
     try {
       const options = {
         method: "GET",
@@ -24,19 +24,21 @@ function WeatherData() {
         `https://api.tomorrow.io/v4/weather/realtime?location=${city}&apikey=${process.env.REACT_APP_API_KEY}`,
         options
       ).then((res) => res.json());
-
       getdetails(response.data.values);
-      console.log(response);
     } catch (e) {
       console.error(e);
     }
   };
 
   useEffect(() => {
-    FetchData();
+    fetchData();
   }, []);
 
-  return <>{details && <Weather details={details} city={city} />}</>;
+  return (
+    <>
+      <>{details && <Weather details={details} city={city} />}</>
+    </>
+  );
 }
 
 export default WeatherData;
