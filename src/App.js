@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import UserProfile from "./components/UserProfile";
+import TodoList from "./components/TodoList";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 5rem 0 5rem;
+  margin: 0 auto;
+`;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <Container>
+          <UserProfile
+            userdetails={{
+              name: "Priyanka Maru",
+              email: "priyanka.maru@gmail.com",
+            }}
+          />
+          <TodoList />
+        </Container>
+      </>
     </div>
   );
 }
