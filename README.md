@@ -48,6 +48,10 @@ The project structure is organized as follows:
             ├── package.json             #Contains project dependencies and scripts
             └── README.md                #Project documentation
 
+## Wireframe of the application
+
+![Wireframe of Personal Dashboard application](<Screenshot 2024-03-02 at 21.14.07.png>)
+
 ## Technologies Used
 
 - [React.js](https://react.dev/)
