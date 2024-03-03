@@ -2,7 +2,9 @@
 
 ## Overview
 
-    A personal dashboard application using React.js that displays a user's personal information, a to-do list, and the current weather in their city. The application is responsive and works on both desktop and mobile devices.
+A personal dashboard application using React.js that displays a user's personal information,
+a to-do list, and the current weather in their city.
+The application is responsive and works on both desktop and mobile devices.
 
 ## Steps to Install and Run the Project
 
