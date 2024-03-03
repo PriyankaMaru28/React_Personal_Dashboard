@@ -31,7 +31,7 @@ The application is responsive and works on both desktop and mobile devices.
 The project structure is organized as follows:
 
     React_Personal_Dashboard/
-            ├── App/                     #Contains React.js app code
+            ├── App.js                   #Contains React.js app code
             │── public/                  #Contains Static assests
             └── src/                     #Contains project files
                 │──components/           #Contains React components
